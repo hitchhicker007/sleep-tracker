@@ -11,10 +11,10 @@ function About() {
                     <nav id="menu">
                         <ul>
                             <li>
-                                <Link to='/'><a id="def" className="li-btn">Tracker</a></Link>
+                                <Link to='/'><p id="def" className="li-btn">Tracker</p></Link>
                             </li>
                             <li>
-                                <Link to='/about'><a className="li-btn li-btn-active" id="about">About</a></Link>
+                                <Link to='/about'><p className="li-btn li-btn-active" id="about">About</p></Link>
                             </li>
                         </ul>
                     </nav>

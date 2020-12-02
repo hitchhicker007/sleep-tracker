@@ -18,7 +18,6 @@ function Home() {
         var today = new Date();
         var hour = today.getHours().toString()
         var min = today.getMinutes().toString();
-        var currentYear = today.getFullYear().toString();
 
         if(hour<=9){
             hour = `0${hour}`
@@ -36,7 +35,7 @@ function Home() {
             setTime(currentTime);
             setFirstTime(false);
         }
-    }, [time])
+    }, [currentTime])
 
     const wakeHandler = () => {
         let wake = document.querySelector(".wake");
