@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Work+Sans:wght@400;500;700&display=swap");
+:root {
+    --xiketic: #3b2758;
+    --stars: #fffaff;
+    --moon: #ffb703;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
+    /* background: url(./assets/Liquid-Cheese.svg); */
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--stars);
+    z-index: 0;
+    /* height: 100vhmax; */
+    width: 100vw;
+    position: relative;
+    padding-bottom: 6rem;
+}
+
+.container {
+    margin: 1em;
+}
+
+
+/* Uncommnent Code for Video  and comment background from body*/
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}

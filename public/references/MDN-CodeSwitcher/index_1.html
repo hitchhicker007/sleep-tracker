@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html
+  data-scrapbook-source="https://interactive-examples.mdn.mozilla.net/pages/tabbed/attribute-contenteditable.html"
+  data-scrapbook-create="20201102011300063"
+  lang="en"
+>
+  <head>
+    <style>
+      body {
+        transition: opacity ease-in 0.2s;
+      }
+
+      body[unresolved] {
+        opacity: 0;
+        display: block;
+        overflow: hidden;
+        position: relative;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>HTML Demo: contenteditable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="codemirror-tabbed-5-50-2.css" rel="stylesheet" />
+    <link href="editor-tabbed.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="output-header">
+      <h4>HTML Demo: contenteditable</h4>
+      <button id="reset" class="reset" type="button">Reset</button>
+    </header>
+    <div id="editor-container" class="editor-container tabbed-shorter">
+      <section id="tab-container" class="tabs">
+        <div id="tablist" role="tablist">
+          <button
+            role="tab"
+            aria-selected="true"
+            aria-controls="html-panel"
+            id="html"
+            class=""
+          >
+            HTML
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="css-panel"
+            id="css"
+            class=""
+            tabindex="-1"
+          >
+            CSS
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="js-panel"
+            id="js"
+            class="hidden"
+            tabindex="-1"
+          >
+            JavaScript
+          </button>
+        </div>
+        <section
+          id="html-panel"
+          tabindex="0"
+          role="tabpanel"
+          aria-labelledby="html"
+          class=""
+          aria-hidden="false"
+        >
+          <div id="html-editor">
+            <pre class="hidden"><code>&lt;blockquote contenteditable="true"&gt;
+    &lt;p&gt;Edit this content to add your own quote&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;cite contenteditable="true"&gt;-- Write your own name here&lt;/cite&gt;
+</code></pre>
+            <div class="CodeMirror cm-s-default CodeMirror-wrap">
+              <div
+                style="
+                  overflow: hidden;
+                  position: relative;
+                  width: 3px;
+                  height: 0px;
+                  top: 6.60001px;
+                  left: 38.3333px;
+                "
+              >
+                <textarea
+                  style="
+                    position: absolute;
+                    bottom: -1em;
+                    padding: 0px;
+                    width: 1px;
+                    height: 1em;
+                    outline: currentcolor none medium;
+                  "
+                  autocorrect="off"
+                  autocapitalize="none"
+                  spellcheck="false"
+                  tabindex="0"
+                  wrap="off"
+                ></textarea>
+              </div>
+              <div
+                class="CodeMirror-vscrollbar"
+                tabindex="-1"
+                cm-not-content="true"
+              >
+                <div style="min-width: 1px; height: 0px"></div>
+              </div>
+              <div
+                class="CodeMirror-hscrollbar"
+                tabindex="-1"
+                cm-not-content="true"
+              >
+                <div style="height: 100%; min-height: 1px; width: 0px"></div>
+              </div>
+              <div
+                class="CodeMirror-scrollbar-filler"
+                cm-not-content="true"
+              ></div>
+              <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+              <div class="CodeMirror-scroll" tabindex="-1" draggable="true">
+                <div
+                  class="CodeMirror-sizer"
+                  style="
+                    margin-left: 30px;
+                    margin-bottom: -16px;
+                    border-right-width: 34px;
+                    min-height: 138px;
+                    padding-right: 0px;
+                    padding-bottom: 0px;
+                  "
+                >
+                  <div style="position: relative; top: 0px">
+                    <div class="CodeMirror-lines" role="presentation">
+                      <div
+                        style="
+                          position: relative;
+                          outline: currentcolor none medium;
+                        "
+                        role="presentation"
+                      >
+                        <div class="CodeMirror-measure">
+                          <span><span>​</span>x</span>
+                        </div>
+                        <div class="CodeMirror-measure"></div>
+                        <div style="position: relative; z-index: 1"></div>
+                        <div class="CodeMirror-cursors">
+                          <div
+                            class="CodeMirror-cursor"
+                            style="left: 4px; top: 0px; height: 21.6px"
+                          >
+                            &nbsp;
+                          </div>
+                        </div>
+                        <div
+                          class="CodeMirror-code"
+                          role="presentation"
+                          style=""
+                        >
+                          <div style="position: relative">
+                            <div
+                              class="CodeMirror-gutter-wrapper"
+                              style="left: -30px"
+                            >
+                              <div
+                                class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                style="left: 0px; width: 21px"
+                              >
+                                1
+                              </div>
+                            </div>
+                            <pre
+                              class="CodeMirror-line"
+                              role="presentation"
+                            ><span role="presentation"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">blockquote</span> <span class="cm-attribute">contenteditable</span>=<span class="cm-string">"true"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre>
+                          </div>
+                          <div style="position: relative">
+                            <div
+                              class="CodeMirror-gutter-wrapper"
+                              style="left: -30px"
+                            >
+                              <div
+                                class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                style="left: 0px; width: 21px"
+                              >
+                                2
+                              </div>
+                            </div>
+                            <pre
+                              class="CodeMirror-line"
+                              role="presentation"
+                            ><span role="presentation"> &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Edit this content to add your own quote<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span></span></pre>
+                          </div>
+                          <div style="position: relative">
+                            <div
+                              class="CodeMirror-gutter-wrapper"
+                              style="left: -30px"
+                            >
+                              <div
+                                class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                style="left: 0px; width: 21px"
+                              >
+                                3
+                              </div>
+                            </div>
+                            <pre
+                              class="CodeMirror-line"
+                              role="presentation"
+                            ><span role="presentation"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">blockquote</span><span class="cm-tag cm-bracket">&gt;</span></span></pre>
+                          </div>
+                          <div style="position: relative">
+                            <div
+                              class="CodeMirror-gutter-wrapper"
+                              style="left: -30px"
+                            >
+                              <div
+                                class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                style="left: 0px; width: 21px"
+                              >
+                                4
+                              </div>
+                            </div>
+                            <pre
+                              class="CodeMirror-line"
+                              role="presentation"
+                            ><span role="presentation"><span cm-text="">​</span></span></pre>
+                          </div>
+                          <div style="position: relative">
+                            <div
+                              class="CodeMirror-gutter-wrapper"
+                              style="left: -30px"
+                            >
+                              <div
+                                class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                style="left: 0px; width: 21px"
+                              >
+                                5
+                              </div>
+                            </div>
+                            <pre
+                              class="CodeMirror-line"
+                              role="presentation"
+                            ><span role="presentation"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">cite</span> <span class="cm-attribute">contenteditable</span>=<span class="cm-string">"true"</span><span class="cm-tag cm-bracket">&gt;</span>-- Write your own name here<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">cite</span><span class="cm-tag cm-bracket">&gt;</span></span></pre>
+                          </div>
+                          <div style="position: relative">
+                            <div
+                              class="CodeMirror-gutter-wrapper"
+                              style="left: -30px"
+                            >
+                              <div
+                                class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                style="left: 0px; width: 21px"
+                              >
+                                6
+                              </div>
+                            </div>
+                            <pre
+                              class="CodeMirror-line"
+                              role="presentation"
+                            ><span role="presentation"><span cm-text="">​</span></span></pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    position: absolute;
+                    height: 34px;
+                    width: 1px;
+                    border-bottom: 0px solid transparent;
+                    top: 138px;
+                  "
+                ></div>
+                <div class="CodeMirror-gutters" style="height: 172px">
+                  <div
+                    class="CodeMirror-gutter CodeMirror-linenumbers"
+                    style="width: 29px"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="css-panel"
+          tabindex="0"
+          role="tabpanel"
+          aria-labelledby="css"
+          class="hidden"
+          aria-hidden="true"
+        >
+          <div id="css-editor">
+            <pre class="hidden"><code>.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+blockquote {
+    background: #eee;
+    border-radius: 5px;
+    margin: 16px 0;
+}
+
+blockquote p {
+    padding: 15px;
+}
+
+cite {
+    margin: 16px 32px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+[contenteditable='true'] {
+    caret-color: red;
+}
+</code></pre>
+            <div class="CodeMirror cm-s-default">
+              <div
+                style="
+                  overflow: hidden;
+                  position: relative;
+                  width: 3px;
+                  height: 0px;
+                "
+              >
+                <textarea
+                  style="
+                    position: absolute;
+                    bottom: -1em;
+                    padding: 0px;
+                    width: 1px;
+                    height: 1em;
+                    outline: currentcolor none medium;
+                  "
+                  autocorrect="off"
+                  autocapitalize="none"
+                  spellcheck="false"
+                  tabindex="0"
+                  wrap="off"
+                ></textarea>
+              </div>
+              <div
+                class="CodeMirror-vscrollbar"
+                tabindex="-1"
+                cm-not-content="true"
+              >
+                <div style="min-width: 1px"></div>
+              </div>
+              <div
+                class="CodeMirror-hscrollbar"
+                tabindex="-1"
+                cm-not-content="true"
+              >
+                <div style="height: 100%; min-height: 1px"></div>
+              </div>
+              <div
+                class="CodeMirror-scrollbar-filler"
+                cm-not-content="true"
+              ></div>
+              <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+              <div class="CodeMirror-scroll" tabindex="-1" draggable="true">
+                <div
+                  class="CodeMirror-sizer"
+                  style="margin-left: 0px; min-width: 3px"
+                >
+                  <div style="position: relative">
+                    <div class="CodeMirror-lines" role="presentation">
+                      <div
+                        style="
+                          position: relative;
+                          outline: currentcolor none medium;
+                        "
+                        role="presentation"
+                      >
+                        <div class="CodeMirror-measure">
+                          <div
+                            class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                          >
+                            <div>30</div>
+                          </div>
+                        </div>
+                        <div class="CodeMirror-measure">
+                          <pre
+                            class="CodeMirror-line"
+                            role="presentation"
+                          ><span role="presentation">    <span class="cm-property">font</span>: <span class="cm-number">1rem</span> <span class="cm-string">'Fira Sans'</span>, <span class="cm-atom">sans-serif</span>;</span></pre>
+                        </div>
+                        <div style="position: relative; z-index: 1"></div>
+                        <div class="CodeMirror-cursors"></div>
+                        <div class="CodeMirror-code" role="presentation"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="position: absolute; height: 50px; width: 1px"></div>
+                <div class="CodeMirror-gutters">
+                  <div
+                    class="CodeMirror-gutter CodeMirror-linenumbers"
+                    style="width: 1px"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="js-panel"
+          tabindex="0"
+          role="tabpanel"
+          aria-labelledby="js"
+          class="hidden"
+          aria-hidden="true"
+        >
+          <div id="js-editor">
+            <pre class="hidden"><code></code></pre>
+          </div>
+        </section>
+      </section>
+      <h4 class="output-label">Output</h4>
+      <div id="output" class="shadow-container">
+        <shadow-output
+          data-scrapbook-shadowroot='{"data":"<style>.output{background-color:#fff;border:15px solid #eee;box-shadow:inset 5px 5px 10px rgba(0, 0, 0, .3), inset -5px -5px 10px rgba(0, 0, 0, .2);font-size:0.9rem;line-height:1.5;margin:24px 1em 0 0;overflow:scroll;padding:30px}</style><style>.output {\n    font: 1rem &apos;Fira Sans&apos;, sans-serif;\n}\n\nblockquote {\n    background: #eee;\n    border-radius: 5px;\n    margin: 16px 0;\n}\n\nblockquote p {\n    padding: 15px;\n}\n\ncite {\n    margin: 16px 32px;\n}\n\nblockquote p::before {\n    content: &apos;\\201C&apos;;\n}\n\nblockquote p::after {\n    content: &apos;\\201D&apos;;\n}\n\n[contenteditable=&apos;true&apos;] {\n    caret-color: red;\n}\n</style><div class=\"output\" style=\"height: 62%;\"><blockquote contenteditable=\"true\">\n    <p>Edit this content to add your own quote</p>\n</blockquote>\n\n<cite contenteditable=\"true\">-- Write your own name here</cite>\n</div>","mode":"open"}'
+        >
+        </shadow-output>
+        <template id="code_tmpl">
+          <style>
+            .output {
+              background-color: #fff;
+              border: 15px solid #eee;
+              box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3),
+                inset -5px -5px 10px rgba(0, 0, 0, 0.2);
+              font-size: 0.9rem;
+              line-height: 1.5;
+              margin: 24px 1em 0 0;
+              overflow: scroll;
+              padding: 30px;
+            }
+          </style>
+          <style>
+            .output {
+              font: 1rem "Fira Sans", sans-serif;
+            }
+
+            blockquote {
+              background: #eee;
+              border-radius: 5px;
+              margin: 16px 0;
+            }
+
+            blockquote p {
+              padding: 15px;
+            }
+
+            cite {
+              margin: 16px 32px;
+            }
+
+            blockquote p::before {
+              content: "\201C";
+            }
+
+            blockquote p::after {
+              content: "\201D";
+            }
+
+            [contenteditable="true"] {
+              caret-color: red;
+            }
+          </style>
+          <div class="output">
+            <blockquote contenteditable="true">
+              <p>Edit this content to add your own quote</p>
+            </blockquote>
+
+            <cite contenteditable="true">-- Write your own name here</cite>
+          </div>
+        </template>
+      </div>
+    </div>
+
+    <section class="console-container hidden" aria-hidden="true">
+      <h4 class="console-label">Console Output</h4>
+      <button type="button" id="clear" class="clear">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 877.714 1024"
+          class="icon-clear"
+        >
+          <path
+            class="path0"
+            stroke="inherit"
+            d="M749.714 510.286c0-62.286-18.286-120-49.714-168.571L269.143 772.001c49.143 32 107.429 50.857 169.714 50.857 171.429 0 310.857-140 310.857-312.571zM178.857 681.143l431.429-430.857c-49.143-33.143-108-52-171.429-52-171.429 0-310.857 140-310.857 312 0 63.429 18.857 121.714 50.857 170.857zm698.857-170.857c0 243.429-196.571 440.571-438.857 440.571S0 753.714 0 510.286c0-242.857 196.571-440 438.857-440s438.857 197.143 438.857 440z"
+          ></path>
+        </svg>
+        clear console
+      </button>
+      <div id="console" class="console"><code></code></div>
+    </section>
+  </body>
+  <script data-scrapbook-elem="basic-loader">
+    (function () {
+      var k1 = "data-scrapbook-shadowroot",
+        k2 = "data-scrapbook-input-indeterminate",
+        k3 = "data-scrapbook-canvas",
+        fn = function (r) {
+          var E = r.querySelectorAll
+              ? r.querySelectorAll("*")
+              : r.getElementsByTagName("*"),
+            i = E.length,
+            e,
+            d,
+            s;
+          while (i--) {
+            e = E[i];
+            if (e.hasAttribute(k1) && !e.shadowRoot && e.attachShadow) {
+              d = JSON.parse(e.getAttribute(k1));
+              s = e.attachShadow({ mode: d.mode });
+              s.innerHTML = d.data;
+              e.removeAttribute(k1);
+            }
+            if (e.shadowRoot) {
+              fn(e.shadowRoot);
+            }
+            if (e.hasAttribute(k2)) {
+              e.indeterminate = true;
+              e.removeAttribute(k2);
+            }
+            if (e.hasAttribute(k3)) {
+              (function () {
+                var c = e,
+                  g = new Image();
+                g.onload = function () {
+                  c.getContext("2d").drawImage(g, 0, 0);
+                };
+                g.src = c.getAttribute(k3);
+                c.removeAttribute(k3);
+              })();
+            }
+          }
+        };
+      fn(document);
+    })();
+  </script>
+</html>
