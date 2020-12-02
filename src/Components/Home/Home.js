@@ -35,7 +35,7 @@ function Home() {
             setTime(currentTime);
             setFirstTime(false);
         }
-    }, [currentTime])
+    },[firstTime])
 
     const wakeHandler = () => {
         let wake = document.querySelector(".wake");
