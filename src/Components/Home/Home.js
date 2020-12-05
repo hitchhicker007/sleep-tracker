@@ -176,18 +176,18 @@ function Home() {
               <ul>
                 <li>
                   <p id="sleepAt">
-                    {sleepMode ? "WakeUp" : "Sleep"} At: {cycleOne}
+                    {sleepMode ? "WakeUp" : "Sleep"} At😴 : {cycleOne}
                   </p>
                   <span></span>
                 </li>
                 <li>
                   {/* <p id="totalCycles">Total Sleep cycles: {sleepMode ? '6' : '3'}</p> */}
-                  <p id="totalCycles">Total Sleep cycles: 3</p>
+                  <p id="totalCycles">Total Sleep cycles💤 : 3</p>
                   <span></span>
                 </li>
                 <li>
                   {/* <p id="totalHours">Total Hours: {sleepMode ? '9:00' : '4:30'} hrs.</p> */}
-                  <p id="totalHours">Total Hours: 4:30 hrs.</p>
+                  <p id="totalHours">Total Hours🕘 : 4:30 hrs</p>
                   <span></span>
                 </li>
               </ul>
@@ -197,18 +197,18 @@ function Home() {
               <ul>
                 <li>
                   <p id="sleepAt">
-                    {sleepMode ? "WakeUp" : "Sleep"} At: {cycleTwo}
+                    {sleepMode ? "WakeUp" : "Sleep"} At😴 : {cycleTwo}
                   </p>
                   <span></span>
                 </li>
                 <li>
                   {/* <p id="totalCycles">Total Sleep cycles: {sleepMode ? '5' : '4'}</p> */}
-                  <p id="totalCycles">Total Sleep cycles: 4</p>
+                  <p id="totalCycles">Total Sleep cycles💤 : 4</p>
                   <span></span>
                 </li>
                 <li>
                   {/* <p id="totalHours">Total Hours: {sleepMode ? '7:30' : '6:00'} hrs.</p> */}
-                  <p id="totalHours">Total Hours: 6:00 hrs.</p>
+                  <p id="totalHours">Total Hours🕘 : 6:00 hrs.</p>
                   <span></span>
                 </li>
               </ul>
@@ -218,18 +218,18 @@ function Home() {
               <ul>
                 <li>
                   <p id="sleepAt">
-                    {sleepMode ? "WakeUp" : "Sleep"} At: {cycleThree}
+                    {sleepMode ? "WakeUp" : "Sleep"} At😴 : {cycleThree}
                   </p>
                   <span></span>
                 </li>
                 <li>
                   {/* <p id="totalCycles">Total Sleep cycles: {sleepMode ? '4' : '5'}</p> */}
-                  <p id="totalCycles">Total Sleep cycles: 5</p>
+                  <p id="totalCycles">Total Sleep cycles💤 : 5</p>
                   <span></span>
                 </li>
                 <li>
                   {/* <p id="totalHours">Total Hours: {sleepMode ? '6:00' : '7:30'} hrs.</p> */}
-                  <p id="totalHours">Total Hours: 7:30 hrs.</p>
+                  <p id="totalHours">Total Hours🕘 : 7:30 hrs.</p>
                   <span></span>
                 </li>
               </ul>
@@ -238,17 +238,17 @@ function Home() {
             <div className="result-card">
               <ul>
                 <li>
-                  <p id="sleepAt">Sleep At: {cycleFour}</p>
+                  <p id="sleepAt">Sleep At😴 : {cycleFour}</p>
                   <span></span>
                 </li>
                 <li>
                   {/* <p id="totalCycles">Total Sleep cycles: {sleepMode ? '3' : '6'}</p> */}
-                  <p id="totalCycles">Total Sleep cycles: 6</p>
+                  <p id="totalCycles">Total Sleep cycles💤 : 6</p>
                   <span></span>
                 </li>
                 <li>
                   {/* <p id="totalHours">Total Hours: {sleepMode ? '4:30' : '9:00'} hrs.</p> */}
-                  <p id="totalHours">Total Hours: 9:00 hrs.</p>
+                  <p id="totalHours">Total Hours🕘 : 9:00 hrs.</p>
                   <span></span>
                 </li>
               </ul>

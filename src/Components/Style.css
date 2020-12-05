@@ -243,6 +243,19 @@ nav ul {
   justify-content: center;
   /* align-items: center; */
 }
+#sleepAt,
+#totalCycles,
+#totalHours {
+  /* color: #00b4d8; */
+  color: #434375;
+  font-weight: 700;
+}
+#totalCycles {
+  color: #707599;
+}
+#totalHours {
+  color: #8b5f55;
+}
 
 .result-card {
   /* box-shadow: 0px 1px 7px -2px rgba(0,0,0,.75); */
@@ -352,6 +365,7 @@ footer a {
     align-self: center;
     justify-self: center;
   }
+
   #title {
     grid-area: head;
   }
@@ -374,7 +388,8 @@ footer a {
 
 @media (max-width: 400px) {
   .like-card,
-  .card {
+  .card,
+  .results {
     width: 300px;
   }
 }
@@ -392,7 +407,7 @@ footer a {
   margin-bottom: 0px;
 }
 
-s #sleepAt {
+/* s #sleepAt {
   color: rgb(252, 25, 25);
   font-weight: 700;
 }
@@ -405,4 +420,4 @@ s #sleepAt {
 #totalHours {
   font-weight: 700;
   color: blue;
-}
+} */
