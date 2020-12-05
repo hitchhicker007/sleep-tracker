@@ -284,19 +284,19 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--stars);
     opacity: 0.5;
-    color: black;
+    color: white;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 1.8em;
     font-weight: 600;
+    padding: 10px;
     margin: 0;
 }
 
 footer a {
-    color: var(--xiketic);
+    color: var(--moon);
 }
 
 
