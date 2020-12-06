@@ -288,7 +288,7 @@ function Home() {
       </section>
       <footer id="footer">
         © Copyright 2020, Template Designed By{" "}
-        <a href="http://karan-munjani.tech/">Karan Munjani</a>
+        <a href="https://karan-munjani.tech/">Karan Munjani</a>
       </footer>
     </div>
   );
