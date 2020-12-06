@@ -29,7 +29,7 @@ And Sleep Tracker tool will help you to figure it out.</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime neque id quasi nobis! Necessitatibus dicta voluptas itaque placeat, dolores sit natus voluptates quasi aut fuga doloremque ullam, omnis cupiditate maxime?</p>
                     </div>            
                 </section>
-                <footer id="footer">© Copyright 2020, Template Designed By <a href="http://karan-munjani.tech/">Karan Munjani</a></footer>
+                <footer id="footer">© Copyright 2020, Template Designed By <a href="https://karan-munjani.tech/">Karan Munjani</a></footer>
                 {/* <footer id="footer">© Copyright 2020, Design By Karan Munjani</footer> */}
             </div>  
         </div>
