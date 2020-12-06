@@ -23,7 +23,6 @@ body {
   color: var(--stars);
   z-index: 0;
   /* height: 100vhmax; */
-  width: 100vw;
   position: relative;
   padding-bottom: 6rem;
 }
