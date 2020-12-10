@@ -16,7 +16,7 @@ function About() {
                                 <Link to='/'><p id="def" className="li-btn">Tracker</p></Link>
                             </li>
                             <li>
-                                <Link to='/about'><p className="li-btn li-btn-active" id="about">About</p></Link>
+                                <Link to='/about'><p className="li-btn li-btn-active" id="about">Docs</p></Link>
                             </li>
                         </ul>
                     </nav>
@@ -33,7 +33,7 @@ And Sleep Tracker tool will help you to figure it out.</p>
                         <ol>
                             <li><b>select mode:</b> There are two different modes one is for sleeping time and the second is for wake-up timing.</li><br/>
                             <li><b>Enter time:</b> Now you have to enter time according to your schedule.</li><br/>
-                            <li><b>Get the result:</b> After clicking the button you will see 4 different schedules which you can follow.</li>
+                            <li><b>Get the result:</b> After clicking the button you will see <a href='https://www.verywellhealth.com/the-four-stages-of-sleep-2795920'><b>4 different schedules</b></a> which you can follow.</li>
                         </ol>
                         <h1>How to follow the schedule??</h1>
                         <p>Each sleep cycle schedule contains 3 different pieces of information.</p>

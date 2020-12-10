@@ -122,7 +122,7 @@ function Home() {
                 <li>
                   <Link to="/about">
                     <p className="li-btn" id="about">
-                      About
+                      Docs
                     </p>
                   </Link>
                 </li>
